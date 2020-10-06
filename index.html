@@ -1,28 +1,192 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Raftis</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.jpg">
-	</head>
-	<body>
-		<!-- Banner -->
-		<!--
-			To use a video as your background, set data-video to the name of your video without
-			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-			formats to work correctly.
-		-->
-			<section id="banner" data-video="images/banner">
-				<div class="inner">
-					<h1>Welcome to raftis </h1>
-					<p>A place where you can get your stitch just sitting at your place<br /><br>
-					<a href="Apk/app-debug.apk" download="Raftis APK file" class="button special scrolly">Click here to Download android app</a>
-				</div>
-			</section>
 
+<head>
+  <meta charset="utf-8">
+  <title>Raftis</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-	</body>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo1.png" />
+  <!-- Font Awsome -->
+  <script src="https://kit.fontawesome.com/455d39c75f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Raftis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>The one place to buy stitch clothes.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <a href="Apk/app-debug.apk" download="Raftis APK file"><button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button></a>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="2000" data-aos-once="false">
+          <img class="title-image" src="suit1.jpg" alt="application photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row text-center">
+      <div class="col-lg-4 feature-box" data-aos="fade-right" data-aos-duration="1500">
+        <i class="fas fa-check-circle fa-3x feature-icon"></i>
+        <h3>Easy to use.</h3>
+        <p class="feature-text">So easy to use, everyone can use it.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box" data-aos="zoom-out" data-aos-duration="1500">
+        <i class="fas fa-bullseye fa-3x feature-icon"></i>
+        <h3>Elite Clientele</h3>
+        <p class="feature-text">We have all the products, all major brands.</p>
+      </div>
+
+      <div class="col-lg-4 feature-box" data-aos="fade-left" data-aos-duration="1500">
+        <i class="fas fa-heart fa-3x feature-icon"></i>
+        <h3>Guaranteed to work.</h3>
+        <p class="feature-text">Find your fashion now.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to go outside to buy clothes.I can find easily on Raftis app.</h2>
+          <img class="testimonial-image" src="suit1.jpg" alt="user-profile">
+          <em>Palash, Mumbai</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">I could go to the store only during the weekend, but with The Raftis help, I can buy whenever I want.</h2>
+          <img class="testimonial-image" src="suit1.jpg" alt="profile-pic">
+          <em>Ronny, Bangalore</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>Some of the collections</h2>
+    <p>Luxury and affordable price range for your wardrobe.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="card">
+          <div class="card-header">
+            <h3>Raymond</h3>
+          </div>
+          <div class="card-body">
+            <img class="brand-image" style="height:200px" src="raymond_shirt.png" alt="raymond-img" />
+            <h3><i class="fa fa-rupee"></i> 899 onwards</h3>
+            <button type="button" class="btn btn-lg btn-outline-dark btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="card">
+          <div class="card-header">
+            <h3>Reid & Taylor</h3>
+          </div>
+          <div class="card-body">
+            <img class="brand-image" style="height:200px" src="suit1.jpg" alt="reid&Taylor-img" />
+            <h3><i class="fa fa-rupee"></i> 1499 onwards</h3>
+            <button type="button" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="card">
+          <div class="card-header">
+            <h3>Siyaram's</h3>
+          </div>
+          <div class="card-body">
+            <img class="brand-image" style="height:200px" src="raymond_suits.png" alt="siyarams-img" />
+            <h3><i class="fa fa-rupee"></i> 1299 onwards</h3>
+            <button type="button" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Find Your fashion now. And dress your wardrobe</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="footer-icon fab fa-twitter"></i>
+    <i class="footer-icon fab fa-facebook-f"></i>
+    <i class="footer-icon fab fa-instagram"></i>
+    <i class="footer-icon fas fa-envelope"></i>
+    <p class="footer-text">© Copyright 2020 Raftis</p>
+
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  </script>
+</body>
+
 </html>
